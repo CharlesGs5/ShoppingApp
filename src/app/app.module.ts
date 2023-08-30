@@ -22,6 +22,7 @@ import {ProductsHeaderComponent} from "./components/products-header/products-hea
 import { FiltersComponent } from './components/filters/filters.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
 import {NgOptimizedImage} from "@angular/common";
+import { CartComponent } from './components/cart/cart.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {NgOptimizedImage} from "@angular/common";
     HomeComponent,
     ProductsHeaderComponent,
     FiltersComponent,
-    ProductBoxComponent
+    ProductBoxComponent,
+    CartComponent
   ],
     imports: [
         BrowserModule,
