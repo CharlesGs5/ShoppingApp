@@ -12,7 +12,7 @@ export class FiltersComponent {
   categories: string[] = ['shoes', 'sports'];
 
   onShowCategory = (category: string): void => {
+    console.log('Emitting category:', category);
     this.showCategory.emit(category);
   }
-
 }

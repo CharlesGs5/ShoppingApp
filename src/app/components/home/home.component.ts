@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 
+const ROWS_HEIGHT: {[id: number]: number} = {
+  1: 400,
+  3: 335,
+  4: 350
+}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,7 +13,8 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   cols: number = 3;
-  category: string = '';
+  rowHeight = ROWS_HEIGHT[this.cols];
+  category: string | undefined;
 
   onColumnsChange = (colsNumber: number): void => {
     this.cols = colsNumber;
