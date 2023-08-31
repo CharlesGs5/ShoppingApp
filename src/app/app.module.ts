@@ -23,6 +23,7 @@ import { FiltersComponent } from './components/filters/filters.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
 import {NgOptimizedImage} from "@angular/common";
 import { CartComponent } from './components/cart/cart.component';
+import {CartService} from "./services/cart.service";
 
 
 @NgModule({
@@ -53,7 +54,7 @@ import { CartComponent } from './components/cart/cart.component';
         AppRoutingModule,
         NgOptimizedImage
     ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
