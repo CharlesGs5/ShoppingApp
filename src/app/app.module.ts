@@ -24,6 +24,8 @@ import { ProductBoxComponent } from './components/product-box/product-box.compon
 import {NgOptimizedImage} from "@angular/common";
 import { CartComponent } from './components/cart/cart.component';
 import {CartService} from "./services/cart.service";
+import {StoreService} from "./services/store.service";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -52,9 +54,10 @@ import {CartService} from "./services/cart.service";
         MatBadgeModule,
         MatSnackBarModule,
         AppRoutingModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        HttpClientModule,
     ],
-  providers: [CartService],
+  providers: [CartService, StoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
