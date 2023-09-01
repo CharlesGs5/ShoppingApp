@@ -9,13 +9,14 @@ import {loadStripe} from "@stripe/stripe-js";
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  cart: Cart = { items : [{
-      product: "prdImg",
-      name: "Product",
-      price: 25,
-      quantity: 10,
-      id: 1,
-    },
+  cart: Cart = { items : [
+      {
+          product: "prdImg",
+          name: "Product",
+          price: 25,
+          quantity: 10,
+          id: 1,
+      },
       {
           product: "prdImg",
           name: "Product",
